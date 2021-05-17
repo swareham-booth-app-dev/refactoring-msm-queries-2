@@ -23,5 +23,6 @@ class Movie < ApplicationRecord
    # return the_director
     
   #end
+  # you can leave out foreign key based on the name of the method name
   belongs_to(:director, { :class_name => "Director", :foreign_key => "director_id" })
 end
